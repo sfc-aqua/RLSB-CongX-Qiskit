@@ -21,6 +21,7 @@ Qiskit / CongX quantum circuit. First, install Qiskit and CongX.
 Quantum circuits and recording optimization results
 ## Contents from Original RLSB 
 To be released after approval of the original author
+
 <!-- 
 |Family/type|Individual functions and circuits|
 |:--:|:--:|
@@ -63,7 +64,7 @@ The author of Qiskit fluctuates so please collect bib from this [link](https://g
 ## Acknowledgement
 Special thanks and respect to Dmitri Maslov, the original RLSB maintainer and all programmers involved in that project. 
 
-Thanks to Atushi Matuo(IBM Research) for telling me about the existence of RLSB. Thanks to my supervisor at Keio University SFC, Professor Rodney Van Meter and Assistant Professor Takahiko Satoh. Thanks to all members of [AQUA](https://aqua.sfc.wide.ad.jp/members_en.html)(Advancing QUantum Architecture). 
+Thanks to [Atsushi Matsuo(IBM Research)](https://researcher.watson.ibm.com/researcher/view.php?person=jp-MATSUOA) for telling me about the existence of RLSB. Thanks to my supervisor at Keio University SFC, Professor [Rodney Van Meter](https://web.sfc.keio.ac.jp/~rdv/) and Assistant Professor [Takahiko Satoh](http://quantum.sfc.keio.ac.jp/employees/takahiko-satoh/). Thanks to all members of [AQUA](https://aqua.sfc.wide.ad.jp/members_en.html)(Advancing Quantum Architecture group) for useful discussions. 
 
 ## See also
 * [CongX](https://github.com/parton-quark/CongX) is a controlled gate exansion set for Qiskit. Includes some generalized(biary controlled) Tofolli gate and compilers for them. Made by Shin Nishio.
