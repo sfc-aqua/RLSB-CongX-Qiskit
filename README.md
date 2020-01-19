@@ -45,7 +45,7 @@ Newly written circuit for RLSB-CongX-Qiskit.
 
 |Algorithm|image|.tfc|.py|description|
 |:-------:|:---:|:--:|:-:|:---------:|
-|Quantum Walk on complete graph|circuit|image|cost|cost|depth|T counts|qubits|
+|Quantum Walk on complete graph|image|circuits|circuits|TBD|
 
 <!-- Quantum Cost is given as follows.
 $$C=C_s+C_c \times$ 10$$ where $C_s$ is a number of Single-Qubit gates, and $C_c$ is a number of Two-Qubit Gates. 
@@ -66,9 +66,9 @@ Special thanks and respect to Dmitri Maslov, the original RLSB maintainer and al
 Thanks to Atushi Matuo(IBM Research) for telling me about the existence of RLSB. Thanks to my supervisor at Keio University SFC, Professor Rodney Van Meter and Assistant Professor Takahiko Satoh. Thanks to all members of [AQUA](https://aqua.sfc.wide.ad.jp/members_en.html)(Advancing QUantum Architecture). 
 
 ## See also
-[CongX](https://github.com/parton-quark/CongX) is a controlled gate exansion set for Qiskit. Includes some generalized(biary controlled) Tofolli gate and compilers for them. Made by Shin Nishio.
+* [CongX](https://github.com/parton-quark/CongX) is a controlled gate exansion set for Qiskit. Includes some generalized(biary controlled) Tofolli gate and compilers for them. Made by Shin Nishio.
 
-[RevKit](http://www.revlib.org/)is an open source toolkit for reversible circuit design by Group of Computer Architecture
+* [RevKit](http://www.revlib.org/)is an open source toolkit for reversible circuit design by Group of Computer Architecture
 of the University of Bremen. 
 
-[RevLib](http://www.revlib.org/)is an online resource for benchmarks within the domain of reversible and quantum circuit design by Group of Computer Architecture of the University of Bremen.
+* [RevLib](http://www.revlib.org/)is an online resource for benchmarks within the domain of reversible and quantum circuit design by Group of Computer Architecture of the University of Bremen.
