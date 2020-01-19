@@ -1,7 +1,7 @@
 # RLSB-CongX-Qiskit
 Reversible Logic Synthesis Benchmarks for Qiskit and CongX.
 
-[Reversible Logic Synthesis Benchmarks Page](https://webhome.cs.uvic.ca/~dmaslov/) is a useful quantum programms for benchmarking reversible/quantum circuit optimization. The original contents are written in machine-readable format (.tfc file) by Dmitri Maslov et al..
+[Reversible Logic Synthesis Benchmarks Page](https://webhome.cs.uvic.ca/~dmaslov/) is a useful tools for benchmarking reversible/quantum circuit optimization. The original contents are written in machine-readable format (.tfc file) by Dmitri Maslov et al..
 
 This is a rewriting of Reversible Logic Synthesis Benchmarks in Qiskit by [Shin Nishio](https://scholar.google.com/citations?user=gZNt8twAAAAJ&hl=ja)(a.k.a. parton). 
 
