@@ -68,8 +68,3 @@ Thanks to [Atsushi Matsuo(IBM Research)](https://researcher.watson.ibm.com/resea
 
 ## See also
 * [CongX](https://github.com/parton-quark/CongX) is a controlled gate exansion set for Qiskit. Includes some generalized(biary controlled) Tofolli gate and compilers for them. Made by Shin Nishio.
-
-* [RevKit](http://www.revlib.org/)is an open source toolkit for reversible circuit design by Group of Computer Architecture
-of the University of Bremen. 
-
-* [RevLib](http://www.revlib.org/)is an online resource for benchmarks within the domain of reversible and quantum circuit design by Group of Computer Architecture of the University of Bremen.
