@@ -52,7 +52,7 @@ def _write_head(py_file):
     lisences = _license_info()
     # import SDKs
     import_qiskit = 'from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister\n'
-    import_CongX = 'from CongX.extensions.standard import cnx\n'
+    import_CongX = 'from CongX.extensions.standard import cnx, cnswap\n'
     # Comments from RLSB-CongX-Qiskit
     comments_from_RLSB_CongX_Qiskit = '# Can be run by installing Qiskit and CongX.\n' + '# !pip install qiskit\n' + '# !pip install CongX\n'
     py_file.write(lisences)
@@ -61,7 +61,7 @@ def _write_head(py_file):
     py_file.write(comments_from_RLSB_CongX_Qiskit)
     
 def _license_info():
-    original_lisence = '# LISENCE\n'
+    original_lisence = '# Reversible Logic Synthesis Benchmarks Page is a set of reversible circuits written and maintained by Dmitri Maslov et al.\n'
     congx_lisence = '# This file is converted by RLSB-CongX-Qiskit. RLSB-CongX-Qiskit is written by Shin Nishio. bib file is https://github.com/parton-quark/RLSB-CongX-Qiskit/blob/master/RLSB-CongX-Qiskit.bib \n'
     license_info = original_lisence + congx_lisence
     return license_info
@@ -105,8 +105,29 @@ def _gt(py_file, tfc_line, valiables_dict):
     py_file.write('\n')
     
 def _gf(py_file, tfc_line, valiables_dict):
-    message = 'Generalized Fredkin is under construction\n'
-    return message
+    '''
+    e.g. 
+    input f3 b,c,d
+        {b:1, c:2, d:3}
+    output qc.cnswap(valiables_dict[b],valiables_dict[c],valiables_dict[d])
+    '''
+    # delete tn
+    tfc_line = tfc_line.lstrip('f')
+    # Delete the head number
+    tfc_line = tfc_line.strip()
+    tfc_line = tfc_line.strip(' ')
+    operand_number = int(tfc_line[0])
+    tfc_line = tfc_line[2:]
+    # make valuable list
+    val_list = tfc_line.split(',')
+    operand_list = []
+    for i in val_list:
+        operand = valiables_dict[str(i)]
+        operand_list.append(operand)
+    operand_str = ', '.join(map(str, operand_list))
+    cnx = "qc.cnx(" + operand_str + ")"
+    py_file.write(cnswap)
+    py_file.write('\n')
     
 def _valiables(py_file, tfc_line):
     '''
